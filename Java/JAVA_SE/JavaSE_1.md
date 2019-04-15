@@ -18,8 +18,10 @@
 &emsp;&emsp;LinkedHashMap 保存了记录的插入顺序，在用Iterator遍历LinkedHashMap时，先得到的记录肯定是先插入的。在遍历的时候会比HashMap慢，不过有种情况例外，当HashMap容量很大，实际数据较少时，遍历起来可能会比LinkedHashMap慢，因为LinkedHashMap的遍历速度只和实际数据有关，和容量无关，而HashMap的遍历速度和容量有关。  
 **TreeMap:**  
 &emsp;&emsp;TreeMap实现SortMap接口，能够把它保存的记录根据键排序，默认是按键值的升序排序，也可以指定排序的比较器，当用Iterator 遍历TreeMap时，得到的记录是排过序的。
+
 ### 3、Object若不重写hashCode()的话，hashCode()如何计算出来的？
 &emsp;&emsp;通过相应的hash函数（哈希算法）进行计算
+
 ### 4、==比较的是什么？
 &emsp;&emsp;比较的是对象的内存地址。
 
