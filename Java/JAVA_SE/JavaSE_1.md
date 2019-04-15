@@ -74,16 +74,20 @@
 <li>Array可以包含基本类型和对象类型，ArrayList只能包含对象类型。
 <li>Array大小是固定的，ArrayList的大小是动态变化的。
 <li>ArrayList提供了更多的方法和特性，比如：addAll()，removeAll()，iterator()等等。
-<li>对于基本类型数据，集合使用自动装箱来减少编码工作量。但是，当处理固定大小的基本数据类型的时候，这种方式相对比较慢。
+<li>对于基本类型数据，集合使用自动装箱来减少编码工作量。但是，当处理固定大小的基本数据类型的时候，这种方式相对比较慢。 
+ 
 ### 13、你了解大O符号(big-O notation)么？你能给出不同数据结构的例子么？
 &emsp;&emsp;时间复杂度。
+
 ### 14、String是最基本的数据类型吗?
 &emsp;&emsp;不是，String是引用数据类型。
+
 ### 15、int 和 Integer 有什么区别
 1、Integer是int的包装类，int则是java的一种基本数据类型   
 2、Integer变量必须实例化后才能使用，而int变量不需要   
 3、Integer实际是对象的引用，当new一个Integer时，实际上是生成一个指针指向此对象；而int则是直接存储数据值   
 4、Integer的默认值是null，int的默认值是0
+
 ### 16、String 和StringBuffer的区别
 **1）String:**是对象不是原始类型.为不可变对象,一旦被创建,就不能修改它的值.对于已经存在的String对象的修改都是重新创建一个新的对象,然后把新的值保存进去.String 是final类,即不能被继承  
 **2）StringBuffer:**是一个可变对象,当对他进行修改的时候不会像String那样重新建立对象。它只能通过构造函数来建立对象被建立以后,在内存中就会分配内存空间,并初始保存一个null.向StringBuffer中付值的时候可以通过它的append方法.
@@ -91,18 +95,22 @@
 	 	tempStr = new String(str.getBytes("ISO-8859-1"), "GBK");//把"ISO-8859-1"转化为“GBK”编码
     	tempStr = tempStr.trim(); 		//trim()用于去掉字符串两端多余的空格
 
+
 ### 18、&和&&的区别？
 <li>Java中&&和&都是表示逻辑与运算符，都表示逻辑运输符and，当两边的表达式都为true的时候，整个运算结果才为true，否则为false。  
 <li>&&的短路功能：当第一个表达式的值为false的时候，则不再计算第二个表达式；&则两个表达式都执行。  
 <li>&可以用作位运算符，当&两边的表达式不是Boolean类型的时候，&表示按位操作。
 ### 19、在Java中，如何跳出当前的多重嵌套循环？
 &emsp;&emsp;标号，用break+标号跳出；break跳出；注入异常跳出。
+
 ### 20、你能比较一下Java和JavaSciprt吗？
 <li>Java和JavaScript最重要的区别是一个是静态语言，一个是动态语言。  
 <li>目前的编程语言的发展趋势是函数式语言和动态语言。在Java中类（class）是一等公民，而JavaScript中函数（function）是一等公民。
 <li>java在运行前必须经过编译，而javaScript则不需要。
+
 ### 21、简述正则表达式及其用途。
 &emsp;&emsp;在编写处理字符串的程序时，经常会有查找符合某些复杂规则的字符串的需要。正则表达式就是用于描述这些规则的工具。换句话说，正则表达式就是记录文本规则的代码。
+
 ### 22、Java中是如何支持正则表达式操作的？
 &emsp;&emsp;Java中的String类提供了支持正则表达式操作的方法，包括：matches()、replaceAll()、replaceFirst()、split()。此外，Java中可以用Pattern类表示正则表达式对象，它提供了丰富的API进行各种正则表达式操作，请参考下面的代码。
 
