@@ -96,8 +96,11 @@
 4、Integer的默认值是null，int的默认值是0
 
 ### 16、String 和StringBuffer的区别
-**1）String:**是对象不是原始类型.为不可变对象,一旦被创建,就不能修改它的值.对于已经存在的String对象的修改都是重新创建一个新的对象,然后把新的值保存进去.String 是final类,即不能被继承  
-**2）StringBuffer:**是一个可变对象,当对他进行修改的时候不会像String那样重新建立对象。它只能通过构造函数来建立对象被建立以后,在内存中就会分配内存空间,并初始保存一个null.向StringBuffer中付值的时候可以通过它的append方法.
+
+**1）String:** 是对象不是原始类型.为不可变对象,一旦被创建,就不能修改它的值.对于已经存在的String对象的修改都是重新创建一个新的对象,然后把新的值保存进去.String 是final类,即不能被继承  
+
+**2）StringBuffer:** 是一个可变对象,当对他进行修改的时候不会像String那样重新建立对象。它只能通过构造函数来建立对象被建立以后,在内存中就会分配内存空间,并初始保存一个null.向StringBuffer中付值的时候可以通过它的append方法.
+
 ### 17、我们在web应用开发过程中经常遇到输出某种编码的字符，如iso8859-1等，如何输出一个某种编码的字符串？
 	 	tempStr = new String(str.getBytes("ISO-8859-1"), "GBK");//把"ISO-8859-1"转化为“GBK”编码
     	tempStr = tempStr.trim(); 		//trim()用于去掉字符串两端多余的空格
