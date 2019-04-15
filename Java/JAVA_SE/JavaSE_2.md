@@ -52,9 +52,12 @@ Object类有12个成员方法，按照用途可以分为以下几种 ：
 <li> notify()用于随机通知一个持有对象的锁的线程获取操作权限
 <li> notifyAll()用于通知所有持有对象的锁的线程获取操作权限
 <li> wait(long) 和wait(long,int)用于设定下一次获取锁的距离当前释放锁的时间间隔  
-**d.toString()和getClass：**toString()返回一个String对象，用来标识自己 ，getClass()返回一个Class对象  
-**e.clone() ：**另存一个当前存在的对象。  
-**f.用于垃圾回收的finalize()：**在进行垃圾回收时会用到，匿名对象回收之前会调用到  
+	
+**d.toString()和getClass：** toString()返回一个String对象，用来标识自己 ，getClass()返回一个Class对象  
+
+**e.clone() ：** 另存一个当前存在的对象。  
+
+**f.用于垃圾回收的finalize()：** 在进行垃圾回收时会用到，匿名对象回收之前会调用到  
 
 ### 6、重载和重写的区别？相同参数不同返回值能重载吗？
 
