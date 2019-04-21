@@ -86,4 +86,5 @@ Object类有12个成员方法，按照用途可以分为以下几种 ：
 <li>应用程序类加载器(Application ClassLoader)：负责加载用户路径（classpath）上的类库。 
 
 &emsp;&emsp;JVM通过双亲委派模型进行类的加载启动类加载器(Bootstrap ClassLoader)：负责加载 JAVA_HOME\lib 目录中的，或通过-Xbootclasspath参数指定路径中的，且被虚拟机认可（按文件名识别，如rt.jar）的类。 扩展类加载器(Extension ClassLoader)：负责加载 JAVA_HOME\lib\ext 目录中的，或通过java.ext.dirs系统变量指定路径中的类库。 应用程序类加载器(Application ClassLoader)：负责加载用户路径（classpath）上的类库。  
+
 &emsp;&emsp;采用双亲委派的一个好处是比如加载位于rt.jar包中的类java.lang.Object，不管是哪个加载器加载这个类，最终都是委托给顶层的启动类加载器进行加载，这样就保证了使用不同的类加载器最终得到的都是同样一个Object对象。
